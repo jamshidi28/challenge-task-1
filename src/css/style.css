@@ -1,0 +1,244 @@
+
+/* Reset */
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+}
+
+/* :root variable */
+
+:root{
+    --color-primary: #219F95;
+    --color-secondary:#AFCEDD;
+    --color-title:#234894;
+    --color-heading:#1E1E1E;
+    --color-body:#696969;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.4rem;
+    color: var(--color-body);
+    line-height: 3.3;
+    font-family: "Vazir";
+
+}
+
+h1,h2,h3 {
+ color: var(--color-heading);
+ font-weight: 900;
+ font-size: 1.6rem;
+}
+
+h1{
+    font-size: 2rem; 
+}
+h2{
+    font-size: 2.2rem; 
+    margin-bottom: 1.5rem;
+}
+ 
+ /* ************container************ */
+
+ .container{
+    max-width: 1340px;
+    margin: 0 auto;
+    padding:  3rem 1.2rem;
+ }
+
+@media screen and (min-width : 1024px){
+    body{
+        font-size: 1.6rem;
+    } 
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom:2.5rem;
+
+    }
+}
+
+
+ /* **********buttons******* */
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 2rem 1.5rem ;
+    margin: 1rem 0;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+.btn--primary {
+    background-color:var(--color-primary);
+   
+    color: #fff;
+    font-weight: 500;
+    font-family: "Vazir";
+   
+}
+@media screen and (min-width:1024px) {
+    .btn--primary {
+       
+        padding: 2rem 1.8rem;
+        font-size: 1.3rem;
+     
+    }
+}
+
+
+ /* **********plan******* */
+
+.plan{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+
+}
+
+@media screen and (min-width :640px){
+    .plan{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem 1rem;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width :1024px) {
+    .plan{
+       
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem 7rem;
+        margin-top: 8rem;
+    
+    }
+}
+
+@media screen and (min-width :1279px) {
+    .plan{
+       
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.5rem 7rem;
+        margin-top: 6rem;
+    
+    }
+}
+
+
+  /* **********card******* */
+
+.card{
+    border-radius: 20px;
+    margin-bottom: 1rem;
+   
+}
+
+
+ .plan__introduction{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+ }
+ .description__text{
+    color: var(--color-title);
+    font-weight: 600;
+    margin-right: 0.5rem;
+ }
+
+ .plan__number{
+    background-color: var(--color-secondary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 7px;
+    color: var(--color-title);
+    font-weight: 900;
+ }
+
+ 
+
+ .plan__text{
+    line-height: 2.5rem; 
+    
+ }
+
+ .plan__text p , .plan__date{
+    font-size: 1.1rem;
+ }
+
+.card__user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.user_info{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.card__user p{
+  
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0 0.7rem;
+    color: var(--color-heading);
+}
+
+@media screen and (min-width:640px) {
+    .card__user p{
+  
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    } 
+}
+
+@media screen and (min-width :1024px) {
+    .card__user p{
+  
+        font-size: 1.4rem;
+        
+    } 
+}
+
+@media screen and (min-width :1279px) {
+    .card__user p{
+  
+        font-size: 1.6rem;
+        
+    } 
+} 
+
+ .card__user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+ }
+ 
+
+
+ 
+
+
+
+
+
+
+
